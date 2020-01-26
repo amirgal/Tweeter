@@ -10,7 +10,9 @@ body{
     padding-right: 25px;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
-    "h .""i b""p p"
+    "h ."
+    "i b"
+    "p p"
 }
 
 #header{
@@ -20,7 +22,7 @@ body{
 
 #input{
     grid-area: i;
-    padding: 2.5px; /*changed from 10px*/
+    padding: 0px; /*changed from 10px*/
     font-size: 1.5vw;
     margin-right: 3px; /*added*/
     margin-left: 10px; /*added*/
