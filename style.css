@@ -48,26 +48,25 @@ body{
     margin: 10px;
     border-radius: 5px;
     padding: 10px;
+    font-weight: bold;
 }
 
 #post:active{
     background-color: #2980b9
 }
 
-.post-text{
-    font-weight: bold;
-}
 
 .comments{
     margin-left: 10px;
     margin: 10px;
+    font-weight: normal;
 }
 
 .delete{
     cursor: pointer;
     color: #ecf0f1;
     background-color: #e74c3c;
-    display: inline-block;
+    display: block;
     padding: 5px;
     border-radius: 3px;
     font-size: 0.8em;

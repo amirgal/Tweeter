@@ -32,7 +32,7 @@ const Tweeter = () => {
             id: "p"+_postidCounter,
             comments: []
         }
-        _posts.push(newPost)
+        _posts.unshift(newPost)
     }
 
     const removePost = (postID) => {

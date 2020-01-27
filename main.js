@@ -7,6 +7,7 @@ const twitBtn = $('#post')
 twitBtn.on('click', function() {                                //Adding a post
     const twitInp = $('#input').val()
     tweeter.addPost(twitInp)
+    $('#input').val("")
     renderer.renderPosts(tweeter.getPosts())
 })
 
