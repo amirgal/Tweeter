@@ -17,9 +17,16 @@ $('#posts').on('click','.delete',function() {                  //Deleting a post
     renderer.renderPosts(tweeter.getPosts())
 })
 
-$('#posts').on('click','.postCom',function(){
+$('#posts').on('click','.postCom',function(){                   //Adding a comment
     const comInp = $(this).siblings('#commentinp').val()
     const postID = $(this).closest('.post').data().id
     tweeter.addComment(comInp,postID)
+    renderer.renderPosts(tweeter.getPosts())
+})
+
+$('#posts').on('click','.delete-comment', function() {          //Deleting a comment
+    const postID = $(this).closest('.post').data().id
+    const comID = $(this).closest('.comments').data().id
+    tweeter.removeComment(postID,comID)
     renderer.renderPosts(tweeter.getPosts())
 })
