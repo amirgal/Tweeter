@@ -7,10 +7,10 @@ const Renderer = function () {
                 postElm.append(`<div class="comments" data-id=${comment.id}><span class=delete-comment>x </span>${comment.text}</div>`)
             }
             $('#posts').append(postElm)  
-            postElm.append(`<input placeholder="Got Something To Say?" id="input"><button>Comment</button>`)
+            postElm.append(`<br><input placeholder="Got Something To Say?" id="commentinp"><button class=postCom>Comment</button>`)
             postElm.append(`<button class="delete" style="display:block">Delete Post</button>`)
         }
     }
-
+    //need to change the <br> when adding the comment input
     return {renderPosts}
 }
